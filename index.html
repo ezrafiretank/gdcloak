@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Eaglercraft 26.0</title>
+<title>Geometry Dash</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.jsdelivr.net/gh/FogNetwork/ABC/index.js"></script>
 </head>
 <body>
 <center>
@@ -16,12 +15,6 @@
 <h4>GREATEST SHOUTOUT TO BOG MY GOAT ❤‍🩹</h4>
 
 <br>
-<html lang="tr"><head><base target="_blank">
-
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Geometry</title>
   <style>
     
     @import url('https://fonts.googleapis.com/css2?family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap');
@@ -42,10 +35,6 @@
       cursor: pointer;
       transition: all 0.3s ease;
       text-decoration: none !important;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       z-index: 1001;
     }
     
@@ -65,13 +54,10 @@
     body, html {
       margin: 0;
       padding: 0;
-      overflow: hidden;
       height: 100%;
     }
   </style>
-</head>
-<body>
-  
+
   <a id="fullscreenButton" class="fullscreen-button">FULLSCREEN</a>
   <div id="contentContainer" class="content-container"></div>
 
@@ -115,9 +101,9 @@ iframe {
 </style>
 </head>
 <body>
-<iframe src="https://ankicozmo321.github.io/geedee" allowfullscreen></iframe>
-<a href="https://ankicozmo321.github.io" target="_blank">
-    <img id="site-logo" src="https://ankicozmo321.github.io/2209/credit.png" alt="Logo">
+<iframe src="https://ezrafiretank.github.io/geedee/" allowfullscreen></iframe>
+<a href="https://github.com/ezrafiretank" target="_blank">
+    <img id="site-logo" src="https://ezrafiretank.github.io/gdcloak/credit.png" alt="Logo">
 </a>
 </body>
 </html>
@@ -132,13 +118,13 @@ iframe {
       if (playButton) {
         playButton.addEventListener('click', showContent);
       } else {
-        console.error('Play butonu bulunamadı.');
+        console.error('Play button not found.');
       }
       
       if (fullscreenButton) {
         fullscreenButton.addEventListener('click', openFullscreen);
       } else {
-        console.error('Fullscreen butonu bulunamadı.');
+        console.error('Fullscreen button not found.');
       }
     });
 
@@ -173,11 +159,11 @@ iframe {
         container.appendChild(iframe);
 
         // Hata ayıklama
-        iframe.onload = () => console.log('Oyun yüklendi');
-        iframe.onerror = (e) => console.error('Oyun yüklenirken hata:', e);
+        iframe.onload = () => console.log('Game loaded');
+        iframe.onerror = (e) => console.error('Error while loading the game:', e);
       } catch (error) {
-        console.error('Hata oluştu:', error);
-        alert('Oyun yüklenemedi. Tarayıcı konsolunu kontrol edin.');
+        console.error('An error occurred:', error);
+        alert('Could not load the game. Check the browser console.');
       }
     }
 
@@ -203,16 +189,15 @@ iframe {
             }
           }, 500);
         } else {
-          alert("Yeni sekme açma engellendi. Lütfen tarayıcı ayarlarını kontrol edin.");
+          alert("Popup blocked. Allow popups for this site and try again.");
         }
       } catch (error) {
-        console.error('Fullscreen hata:', error);
-        alert('Tam ekran modu çalışmadı. Tarayıcı konsolunu kontrol edin.');
+        console.error('Fullscreen error:', error);
+        alert('Something went wrong. Check the browser console.');
       }
     }
   </script>
 
-</body></html>
 </center>
 </body>
 </html>
